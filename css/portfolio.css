@@ -1,0 +1,45 @@
+#portfolio {
+    width: 100%;
+}
+
+#portfolio_intro {
+    width: 100%;
+}
+
+.portfolio_project {
+    width: 100%;
+    margin-top: 2vmax;
+    overflow: hidden;
+}
+
+.portfolio_project_content {
+    float: left;
+    position: relative;
+    width: 31vmax;
+    margin-right: 0.6vmax;
+}
+
+.portfolio_project_image {
+    float: left;
+    position: relative;
+    width: 17.5vmax;
+    padding-top: 17.5vmax;
+    overflow: hidden;
+
+    margin-right: 0.4vmax;
+}
+
+.portfolio_project_image img {
+    height: 100%;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.portfolio_full_description {
+    border-top: 2px solid rgb(0, 168, 143);
+    width: 100%;
+}

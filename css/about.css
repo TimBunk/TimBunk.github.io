@@ -1,0 +1,25 @@
+#about {
+    width: 100%;
+}
+
+#about_intro {
+    width: 100%;
+    overflow: hidden;
+}
+
+#about_intro_text {
+    float: left;
+    width: 75%;
+    padding-right: 5%;
+}
+
+#about_intro_img {
+    float: left;
+    width: 20%;
+    height: auto;
+}
+
+#about_intro_img img {
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Bunk</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/HTML5_reset_stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script> 
+        // Load content from other .html files
+        $(function(){
+            $("#l_menu").load("includes/menu.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper1"><div id="wrapper2">
+
+        <div id="l_menu"></div>
+
+        <div class="portfolio_project">
+            <div class="title"> Galaxians </div>
+            <div class="portfolio_project_content">
+                <div class="content">
+                    Galaxians is a retro game that I recreated for a school project.
+                    <br><br>
+                    The challenge of this project was to have the AI behave as much like orignal game as possible.
+                    <br>
+                    Each AI behaves differently. They all have a unique movement and also start moving differently once some of their allies go down. For example they will move with more at the same time or group together and attack.
+                    <br>
+                    Date: 2018
+                </div>
+            </div>
+            <div class="portfolio_project_image">
+                <img src="projects/Galaxians/Galaxians.png">
+            </div>
+        </div>
+
+        <div class="portfolio_full_description content" style="margin-bottom: 50%;">
+            
+            <br>
+            <div id="home_video">
+                <div id="home_video_container">
+                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:2px solid black;border-radius: 10px;box-shadow:2px 2px black"; 
+                        src="https://www.youtube.com/embed/PSYzex_JjtY" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <br>
+            Github repository: <a target="_blank" href="https://github.com/TimBunk/Gauntlet-Galaxians"> https://github.com/TimBunk/Gauntlet-Galaxians </a>
+        </div>
+
+
+    </div></div>
+    
+</body>
+<footer>
+    <style>
+        #nav_portfolio {border-bottom: 2px solid  rgb(0, 168, 143);}
+    </style>
+</footer>
+</html>

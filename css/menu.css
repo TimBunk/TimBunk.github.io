@@ -1,0 +1,48 @@
+#menu {
+    width: 100%;
+    height: 3vmax;
+    margin-top: 1%;
+    font-family: 'Orbitron';
+}
+
+#menu_left {
+    float: left;
+    height: 100%;
+    width: 72%;
+}
+
+#menu_left_item {
+
+}
+
+#menu_name {
+    font-size: 3vmax;
+    color: rgb(0, 168, 143);
+    padding-right: 2%;
+}
+
+#menu_job_title {
+    padding-top: 0.5vmax;
+    font-size: 2.5vmax;
+}
+
+#menu_right {
+    float: right;
+    height: 100%;
+    width: 26%;
+}
+
+.menu_right_item {
+    float: right;
+}
+
+.menu_right_item img {
+    height: 3vmax;
+    width: auto;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+.menu_right_item img:hover {
+    opacity: 1.0;
+}

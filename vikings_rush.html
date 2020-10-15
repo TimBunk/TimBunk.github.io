@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Bunk</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/HTML5_reset_stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script> 
+        // Load content from other .html files
+        $(function(){
+            $("#l_menu").load("includes/menu.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper1"><div id="wrapper2">
+
+        <div id="l_menu"></div>
+
+        <div class="portfolio_project">
+            <div class="title"> Vikings Rush </div>
+            <div class="portfolio_project_content">
+                <div class="content">
+                    Vikings Rush is one of my first games that I have ever made. It was made using AS3/flash which is pretty outdated now.
+                    <br><br>
+                    I made this game for a school project. The project was about OOP and vector math. This was also my first time that I had to program with OOP and vectors. But doing this project taught me all the basic about programming, OOP and vector math.
+                    <br><br>
+                    The game is a tower defence game so you have to place towers and those towers will try to stop the enemies from passing by, by shooting at them. In the final wave of enemies a boss will appear.
+                    <br>
+                    Date: 2016
+                </div>
+            </div>
+            <a href="vikings_rush.html" style="text-decoration:none;color:rgb(50, 50, 50);">
+                <div class="portfolio_project_image">
+                    <img src="projects/vikingsRush/images/1.png">
+                </div>
+            </a>
+        </div>
+        <div class="portfolio_full_description content" style="margin-bottom: 50%;">
+            <br>
+            You can play this game if you have flash installed in your browser. Also make sure flash is not blocked on this page. By default flash is blocked because it is no longer being maintained.
+            <br>
+            <!-- FLASH GAME -->
+            <div id="flashContent" style="width: 100%; padding-top: 56.25%; position: relative;">
+                <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" style="position: absolute;top: 0; left: 0;bottom: 0;right: 0;"width="100%" height="100%" id="VikingsRush" align="middle">
+                    <param name="movie" value="VikingsRush.swf" />
+                    <param name="quality" value="high" />
+                    <param name="bgcolor" value="#ffffff" />
+                    <param name="play" value="true" />
+                    <param name="loop" value="true" />
+                    <param name="wmode" value="window" />
+                    <param name="scale" value="showall" />
+                    <param name="menu" value="true" />
+                    <param name="devicefont" value="false" />
+                    <param name="salign" value="" />
+                    <param name="allowScriptAccess" value="sameDomain" />
+                    <!--[if !IE]>-->
+                    <object type="application/x-shockwave-flash" data="projects/vikingsRush/VikingsRush.swf" width="100%" height="100%">
+                        <param name="movie" value="projects/vikingsRush/VikingsRush.swf"/>
+                        <param name="quality" value="high" />
+                        <param name="bgcolor" value="#ffffff" />
+                        <param name="play" value="true" />
+                        <param name="loop" value="true" />
+                        <param name="wmode" value="window" />
+                        <param name="scale" value="showall" />
+                        <param name="menu" value="true" />
+                        <param name="devicefont" value="false" />
+                        <param name="salign" value="" />
+                        <param name="allowScriptAccess" value="sameDomain" />
+                    <!--<![endif]-->
+                        <a href="http://www.adobe.com/go/getflash">
+                            <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
+                        </a>
+                    <!--[if !IE]>-->
+                    </object>
+                    <!--<![endif]-->
+                </object>
+            </div>
+
+            <br>
+            Github repository: <a target="_blank" href="https://github.com/TimBunk/VikingsRush"> https://github.com/TimBunk/VikingsRush </a>
+
+            <div id="gallery">
+                <!-- Content will be added through the showcase.js script -->
+            </div>
+            <div id="showcase">
+                <div id="showcase_container">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+
+
+    </div></div>
+    
+</body>
+<footer>
+    <style>
+        #nav_portfolio {border-bottom: 2px solid  rgb(0, 168, 143);}
+    </style>
+    <script src="js/showcase.js"></script>
+    <script> SetImgCountAndLocation(3, "projects/vikingsRush/images/") </script>
+</footer>
+</html>

@@ -1,0 +1,22 @@
+#resume {
+    width: 100%;
+    position: relative;
+}
+
+#resume_preview_img {
+    width: 20%;
+    height: auto;
+    float: left;
+    position: relative;
+}
+
+#resume_preview_img img {
+    width: 100%;
+    height: auto;
+}
+
+#resume_text {
+    width: 75%;
+    padding-left: 5%;
+    float: left;
+}

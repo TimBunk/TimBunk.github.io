@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Bunk</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/HTML5_reset_stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script> 
+        // Load content from other .html files
+        $(function(){
+            $("#l_menu").load("includes/menu.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper1"><div id="wrapper2">
+
+        <div id="l_menu"></div>
+
+        <div class="portfolio_project">
+            <div class="title"> Gauntlet </div>
+            <div class="portfolio_project_content">
+                <div class="content">
+                    Gauntlet is a tile based retro game that I recreated for a school project.
+                    <br><br>
+                    School provided me with a basic c++ framework which was pretty slow (they made it slow on purpose) so I optimized it. Then all I had to do was create the game. I used a tool called Tiled to create levels and I load the levels using my own interpreter.
+                    <br><br>
+                    All of the sprites are inside of a spritesheet and are rendered effeciently using a technique called instancing. Collisions are being checked based on the tiles around you.
+                    <br>
+                    Date: 2018
+                </div>
+            </div>
+            <div class="portfolio_project_image">
+                <img src="projects/Gauntlet/images/3.png">
+            </div>
+        </div>
+        <div class="portfolio_full_description content" style="margin-bottom: 50%;">
+            <br>
+            The reason that the provided framework was so slow was because it did not make use of instacing or batch rendering. So it was rendering every tile one by one even if they were outside of the screen. This drained close to all of the performance.
+            <br><br>
+            I fixed it by grouping all of the objects that use the same sprite to render all at once. Also all of the tiles that are outside of the camera view are not being rendered.
+            <br>
+            <div id="home_video">
+                <div id="home_video_container">
+                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:2px solid black;border-radius: 10px;box-shadow:2px 2px black"; 
+                        src="https://www.youtube.com/embed/tymPBpudmnE" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <br>
+            Github repository: <a target="_blank" href="https://github.com/TimBunk/Gauntlet-Galaxians"> https://github.com/TimBunk/Gauntlet-Galaxians </a>
+
+            <div id="gallery">
+                <!-- Content will be added through the showcase.js script -->
+            </div>
+            <div id="showcase">
+                <div id="showcase_container">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+
+
+    </div></div>
+    
+</body>
+<footer>
+    <style>
+        #nav_portfolio {border-bottom: 2px solid  rgb(0, 168, 143);}
+    </style>
+    <script src="js/showcase.js"></script>
+    <script> SetImgCountAndLocation(8, "projects/Gauntlet/images/") </script>
+</footer>
+</html>

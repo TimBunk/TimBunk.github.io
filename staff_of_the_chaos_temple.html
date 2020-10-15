@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Bunk</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/HTML5_reset_stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script> 
+        // Load content from other .html files
+        $(function(){
+            $("#l_menu").load("includes/menu.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper1"><div id="wrapper2">
+
+        <div id="l_menu"></div>
+
+        <div class="portfolio_project">
+            <div class="title"> Staff of the Chaos Temple </div>
+            <div class="portfolio_project_content">
+                <div class="content">
+                    Staff of the Chaos Temple is game that I made as a intake assignment for the BUAS/NHTV. As intake assignment you had to program a game using c++/opengl.
+                    <br><br>
+                    The main subject of the game had to be about reflection. So I came up with this puzzle/action game where you have to fight enemies and light up crystals to open doors.
+                    <br><br>
+                    You have crystals in a room that can be activated using your staff that shoots a laser. If you activate all of the crystals at the same time with your staff a door will open that is connected to those crystals. You can use the mirrors to have the laser from your staff reflect allowing you to hit multiple crystals at the same time.
+                    <br>
+                    Levels can be created using the level creator that I made as well.
+                    <br>
+                    Date: 2018
+                </div>
+            </div>
+            <div class="portfolio_project_image">
+                <img src="projects/staffOfTheChaosTemple/images/4.png">
+            </div>
+        </div>
+        <div class="portfolio_full_description content" style="margin-bottom: 50%;">
+            <br>
+            The game was made inside of a c++/OpenGL framework that I made. The framework is used for the creation of 2D games. It is a pretty basic framework and has no user interface whatsoever.
+            <br><br>
+            The framework deals with all the rendering and loading resources like files, shaders, images, text etc..
+            <br><br>
+            All that I have to do, to make a game inside of my framework is setup a Scene and put entities in that scene and the framework will know what to do with it. It will update the entities and render them if they are renderable.
+            <br><br>
+            The game also comes with a level creator. You can then place objects in a scene, setup puzzles by connecting crystals too doors, place enemies in the room and once you are done you can test run it and save it.
+            <br>
+            <div id="home_video">
+                <div id="home_video_container">
+                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:2px solid black;border-radius: 10px;box-shadow:2px 2px black"; 
+                        src="https://www.youtube.com/embed/ZLLzGUMQFYk" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <br>
+            Github repository: <a target="_blank" href="https://github.com/TimBunk/tb2d"> https://github.com/TimBunk/tb2d </a>
+
+            <div id="gallery">
+                <!-- Content will be added through the showcase.js script -->
+            </div>
+            <div id="showcase">
+                <div id="showcase_container">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+
+
+    </div></div>
+    
+</body>
+<footer>
+    <style>
+        #nav_portfolio {border-bottom: 2px solid  rgb(0, 168, 143);}
+    </style>
+    <script src="js/showcase.js"></script>
+    <script> SetImgCountAndLocation(10, "projects/staffOfTheChaosTemple/images/") </script>
+</footer>
+</html>

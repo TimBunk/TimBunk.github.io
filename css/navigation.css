@@ -1,0 +1,17 @@
+#navigation {
+    width: 100%;
+    height: 1.1vmax;
+    font-family: 'Traffolight';
+    margin-bottom: 3vmax;
+    border-top: 1px solid grey;
+}
+
+.nav_item {
+    font-size: 1.1vmax;
+    padding-right: 2%;
+}
+
+.nav_item a {
+    text-decoration: none; /* no underline */
+    color: rgb(50, 50, 50);
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Bunk</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/HTML5_reset_stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script> 
+        // Load content from other .html files
+        $(function(){
+            $("#l_menu").load("includes/menu.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper1"><div id="wrapper2">
+
+        <div id="l_menu"></div>
+        <div class="portfolio_project">
+            <div class="title"> Leenfiets website </div>
+            <div class="portfolio_project_content">
+                <div class="content">
+                    Leenfiets is a fake company that me and some schoolmates made up. Leenfiets is Dutch for borrow bike and as the name suggests you can borrow bikes from private individuals through the website that we made.
+                    <br><br>
+                    The main focus of this project was to learn the basics of php, databases and learn how to work in a team using scrum.
+                    <br><br>
+                    Even though it is not the prettiest website I am very happy to show the result because the website contains all the functionality for the whole borrowing process to work and more.
+                    <br>
+                    Date: 2019
+                </div>
+            </div>
+            <div class="portfolio_project_image">
+                <img src="projects/leenfiets/images/leenfiets1.png">
+            </div>
+        </div>
+        <div class="portfolio_full_description content" style="margin-bottom: 25%;">
+            <br>
+            A deposit is used to ensure that the provider gets the bike back in good condition. The lessor receives a fee for lending his bicycle. 
+            <br><br>
+            What I mainly worked on is reserving and borrowing the bicycles. A QR code is used to borrow a bicycle. You check in by scanning the lessors QR code and you scan the lessors QR code again when you have returned the bike. This way we can easily keep track of whether the bicycle is already being borrowed and we can ensure that the provider does not report the bicycle as stolen and the borrower is forced to pay when he returns the bike.
+            <br><br>
+            In addition, I have also made a calendar in javascript in which you can see whether the bike you want to borrow is available on that date.
+            <br><br>
+            I also added a system so that you can put money in your account and borrow bicycles with that money. This is fictitious money.
+            <br><br>
+            <div id="home_video">
+                <div id="home_video_container">
+                    <iframe style="position:absolute;top:0;left:0;width:100%;height:100%;border:2px solid black;border-radius: 10px;box-shadow:2px 2px black"; 
+                        src="https://www.youtube.com/embed/pe_GqY7MqaY" frameborder="1" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <br>
+            I also contributed to the other functionalities by thinking along with my teammates for ways of implementing code and solving problems.
+            <br><br>
+            Other functions of the websites that I have not mentioned yet are:
+            <ul style="margin-left: 3%">
+                <li> Users can register </li>
+                <li> Admin dashboard for adding more options for he bikes and see users </li>
+                <li> Review page </li>
+                <li> News page </li>
+                <li> Search for bikes with a filter </li>
+                <li> Email verification </li>
+            </ul>
+            <br>
+            Github repository: <a target="_blank" href="https://github.com/RubenJ01/leenfiets">https://github.com/RubenJ01/leenfiets</a>
+        </div>
+
+    </div></div>
+    
+</body>
+<footer>
+    <style>
+        #nav_portfolio {border-bottom: 2px solid  rgb(0, 168, 143);}
+    </style>
+</footer>
+</html>
