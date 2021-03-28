@@ -34,13 +34,13 @@
             <div class="title"> Ray tracing </div>
             <div class="portfolio_project_content">
                 <div class="content">
-                    The picture you see to the right is a image made by a ray tracer that I made for a school project. The image is created using only the CPU.
+                    De afbeelding die je hiernaast ziet, is een afbeelding gemaakt door een raytracer die ik heb gemaakt voor een schoolproject. De afbeelding is gemaakt met alleen de CPU.
                     <br><br>
-                    The goal of this project was to learn about graphics, intersections, math, vectors and matrices.
+                    Het doel van dit project was om te leren over graphics, intersections, wiskunde, vectoren en matrices.
                     <br><br>
-                    For me this was quite the challenge as the project was mostly all about math and I am not that experienced in math. I already knew how to work with vectors and matrices but I had to program my own math library which I managed to do. I used unit testing to test if my math library was giving me correct result.
+                    Voor mij was dit een behoorlijke uitdaging, aangezien het project vooral over wiskunde ging en ik niet zo ervaren ben in wiskunde. Ik wist al hoe ik met vectoren en matrices moest werken, maar ik moest mijn eigen wiskundebibliotheek programmeren en dat lukte. Ik heb unit testing gebruikt om te testen of mijn wiskundebibliotheek mij het juiste resultaat gaf.
                     <br>
-                    Date: 2019
+                    Datum: 2019
                 </div>
             </div>
             <div class="portfolio_project_image">
@@ -49,19 +49,19 @@
         </div>
         <div class="portfolio_full_description content" style="margin-bottom: 50%;">
             <br>
-            Ray tracing is 3D computer graphics rendering technique for generating an image by tracing the path of light as pixels in an image plane and simulating the effects of its encounters with virtual objects.
+            Ray-tracing is een 3D-computergraphics-weergavetechniek voor het genereren van een afbeelding door het pad te traceren van licht. Vervolgens wordt er gesimuleerd wat voor een effect het licht heeft op een object.
             <br><br>
-            My challenge was learning and understanding the math that comes with a  matrix. I now have a pretty good understanding of how matrices operate and how they are used to translate a 2D world to 3D.
+            Mijn uitdaging was het leren en begrijpen van de wiskunde die bij een matrix hoort. Ik snap nu een redelijk goed hoe matrices werken en hoe ze worden gebruikt om een 2D-wereld naar 3D te vertalen.
             <br><br>
-            So the first thing I did when I started this project was get the math library working. The vectors were not that much of a problem but matrices have some complex functions like inverse which took me some time to understand what that means and how to calculate it.
+            Dus het eerste dat ik deed toen ik aan dit project begon, was de wiskundebibliotheek aan de praat krijgen. De vectoren waren niet zo'n groot probleem, maar matrices hebben een aantal complexe functies, zoals inverse, wat me enige tijd kostte om te begrijpen wat dat betekent en hoe ik het moest berekenen.
             <br><br>
-            Once the math library was properly working I started by writing some classes. The most important class in this project was shape. Shape is the parent class of all the shapes and contains a default material which can be changed. The next thing for me to do was to setup a scene which contains shapes and a camera. The camera would send rays from its position for every pixel on the screen into the 3D space and check for intersections and if we find a intersection with a shape that means we have to draw that pixel if the light that is in the scene also hits that same pixel.
+            Toen de wiskundebibliotheek eenmaal goed werkte, begon ik met het schrijven van enkele klassen. De belangrijkste klasse in dit project was shape. Shape is de base klas van alle vormen en bevat een standaardmateriaal dat kan worden gewijzigd. Het volgende dat ik moest doen, was een scène opzetten die shapes kan bevatten en een camera bevat. De camera zou vanuit zijn positie voor elke pixel op het scherm stralen naar de 3D-ruimte sturen en controleren op intersections en als we een intersection vinden met een shape, betekent dit dat we die pixel moeten tekenen als het licht in de scène datzelfde punt ook raakt.
             <br><br>
-            To check if a shape got hit by a ray can be an expensive call. Especially when you have many shapes in your scene that needs to be checked if they got hit by a ray. A BVH (bounding volume hierarchy) can help accelerate that process. 
+            Om te controleren of een vorm door een straal is geraakt, kan een dure operatie zijn. Vooral als je veel vormen in je scène hebt die moeten worden gecontroleerd als ze door een straal zijn geraakt. Een BVH (bounding volume hiërarchie) kan dat proces helpen versnellen.
             <br><br>
-            I wrote a document explaining BVH and how I implemented it which can be found here: <a href="projects/raytracer/BVHAcceleratorAndBigO_v2.pdf"> BVH_document </a>
+            Ik heb een document geschreven waarin BVH wordt uitgelegd en hoe ik het heb geïmplementeerd, dat je hier kunt vinden: <a href="projects/raytracer/BVHAcceleratorAndBigO_v2.pdf"> BVH_document </a>
             <br>
-            Class diagram ray tracer: <a href="projects/raytracer/ClassDiagram.pdf">  ray_tracer_document </a>
+            Klasse diagram ray tracer: <a href="projects/raytracer/ClassDiagram.pdf">  ray_tracer_document </a>
             <br>
             Github repository: <a target="_blank" href="https://github.com/TimBunk/Ray-Tracer">  https://github.com/TimBunk/Ray-Tracer </a>
             <br>

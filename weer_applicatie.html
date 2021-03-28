@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Bunk</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/HTML5_reset_stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script> 
+        // Load content from other .html files
+        $(function(){
+            $("#l_menu").load("includes/menu.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper1"><div id="wrapper2">
+
+        <div id="l_menu"></div>
+
+        <div class="portfolio_project">
+            <div class="title"> Weer applicatie </div>
+            <div class="portfolio_project_content">
+                <div class="content">
+                    Voor een schoolproject moesten we een applicatie maken die data weergeeft van heel veel verschillende weerstationen voor Japanse onderzoekers.
+                    <br><br>
+                    Het doel van dit project is om te leren over multithreading en networking. Er zijn namelijk 8000 verschillende weerstationen die elke seconde data sturen naar je applicatie die je vervolgens moet verwerken. Daarnaast moest de data opgeslagen worden en netjes worden weergegeven op een website.
+                    <br>
+                    Datum: 2021
+                </div>
+            </div>
+            <div class="portfolio_project_image">
+                <img src="projects/weer_applicatie/1.png">
+            </div>
+        </div>
+        <div class="portfolio_full_description content" style="margin-bottom: 50%;">
+            <br>
+            De website moest 2 grafieken hebben waarin je de neerslag kan zien per uur van de afgelopen 48 uur voor elke weerstation. Je kan zelf selecteren via een map welke weerstation je wil bekijken. Je kan alleen weerstationen zien waar de afgelopen 48 uur de temperatuur boven de 13.9 graden Celsius was.
+            <br><br>
+            Naast de neerslag moesten we ook de top 10 plekken laten zien waar de hoogste luchtvochtigheid plaatsvond van de afgelopen 4 weken.
+            <br><br>
+            Al deze dingen kan je op de website zien en ook kan je de data downloaden die je hebt geselecteerd. Deze website is beveiligd met een gebruikersnaam en wachtwoord.
+            <br><br>
+            Voor dit project hadden we 3 virtuele machines waar we gebruik van konden maken. 
+            <br><br>
+            Machine 1 was waar de weerstation simulator draaide. Deze simulator spuugde constant data uit voor 8000 weerstationen.
+            <br><br>
+            Machine 2 ontvangt alle data van machine 1 en verwerkt deze data. Na 1 uur van data verzamelen wordt dit doorgestuurd naar machine 3.
+            <br><br>
+            Machine 3 is waar alle data wordt opgeslagen en ook wordt hier de website gedraaid. 
+            <br><br>
+            Mijn taak binnen dit project was om alle data te verwerken en ervoor te zorgen dat het goed wordt opgeslagen maar daarnaast heb ik ook alle team leden geholpen met hun taken.
+            <br><br>
+            Dit was een heel complex project want er kwam heel veel bij kijken daarom kan je het beste onze <a target="_blank" href="projects/weer_applicatie/project_Osaka_University.pdf"> project document </a> bekijken als je hier meer over wilt weten.
+            <br><br>
+            Github repository: <a target="_blank" href="https://github.com/brammosso/hanze_project_2.2"> https://github.com/brammosso/hanze_project_2.2 </a>
+            <div id="gallery">
+                <!-- Content will be added through the showcase.js script -->
+            </div>
+            <div id="showcase">
+                <div id="showcase_container">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+
+
+    </div></div>
+    
+</body>
+<footer>
+    <style>
+        #nav_portfolio {border-bottom: 2px solid  rgb(0, 168, 143);}
+    </style>
+    <script src="js/showcase.js"></script>
+    <script> SetImgCountAndLocation(4, "projects/weer_applicatie/") </script>
+</footer>
+</html>

@@ -32,13 +32,13 @@
             <div class="title"> Gauntlet </div>
             <div class="portfolio_project_content">
                 <div class="content">
-                    Gauntlet is a tile based retro game that I recreated for a school project.
+                    Gauntlet is een tile based retro-spel dat ik heb nagemaakt voor een schoolproject.
                     <br><br>
-                    School provided me with a basic c++ framework which was pretty slow (they made it slow on purpose) so I optimized it. Then all I had to do was create the game. I used a tool called Tiled to create levels and I load the levels using my own interpreter.
+                    School gaf mij een basis c++ framework dat behoorlijk traag was (ze maakten het expres traag), dus ik heb het geoptimaliseerd. Daarna hoefde ik alleen nog maar het spel te maken. Ik heb een tool genaamd Tiled gebruikt om levels te maken en ik laad de levels in met mijn eigen interpreter.
                     <br><br>
-                    All of the sprites are inside of a spritesheet and are rendered effeciently using a technique called instancing. Collisions are being checked based on the tiles around you.
+                    Alle sprites bevinden zich in een spritesheet en worden efficiënt weergegeven met behulp van een techniek die instancing wordt genoemd. Collisions worden gecontroleerd op basis van de tiles om je heen.
                     <br>
-                    Date: 2018
+                    Datum: 2018
                 </div>
             </div>
             <div class="portfolio_project_image">
@@ -47,9 +47,9 @@
         </div>
         <div class="portfolio_full_description content" style="margin-bottom: 50%;">
             <br>
-            The reason that the provided framework was so slow was because it did not make use of instacing or batch rendering. So it was rendering every tile one by one even if they were outside of the screen. This drained close to all of the performance.
+            De reden dat het geleverde framework zo traag was, was omdat het geen gebruik maakte van instancing of batchrendering. Het renderde dus elke tile een voor een, zelfs als ze zich buiten het scherm bevonden.
             <br><br>
-            I fixed it by grouping all of the objects that use the same sprite to render all at once. Also all of the tiles that are outside of the camera view are not being rendered.
+            Ik heb het opgelost door alle objecten die dezelfde sprite gebruiken te groeperen om ze allemaal tegelijk te renderen. Ook worden tiles die buiten het camerabeeld vallen niet gerendert.
             <br>
             <div id="home_video">
                 <div id="home_video_container">
