@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Bunk</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/HTML5_reset_stylesheet.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- JQUERY -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script> 
+        // Load content from other .html files
+        $(function(){
+            $("#l_menu").load("includes/menu.html");
+        });
+    </script>
+
+</head>
+<body>
+
+    <div id="wrapper1"><div id="wrapper2">
+
+        <div id="l_menu"></div>
+
+        <div class="portfolio_project">
+            <div class="title">  Gastles game-design </div>
+            <div class="portfolio_project_content">
+                <div class="content">
+                    Ik heb een gastles gegeven samen met een klasgenoot over game-design aan groep 7 & 8 van OBS de Waterlelie.
+                    <br><br>
+                    We hebben een presentatie gegeven over hoe het is om een game-developer te zijn. Wat is leuk en wat is minder leuk? etc..
+                    <br>
+                    Ik heb ter voorbereiding twee games gemaakt in Scratch om te demonstreren die ze zelf ook nog even konden spelen. Een van deze games was Flappy Bird met microfoon. Je kan dus Flappy Bird spelen en als je 'FLAP!' roept in de microfoon gaat Flappy Bird vliegen. Daarna hebben we het spel ontleed en hebben we gekeken welke stappen je moet nemen om het spel werkend te krijgen. Ook hebben we nog gepraat over brainstorm technieken en vervolgens zijn de kinderen zelf gaan brainstormen over het maken van een game. Als laatste mochten de kinderen zelf aan de slag met Scratch.
+                    <br>
+                    Datum: 2020
+                </div>
+            </div>
+            <div class="portfolio_project_image">
+                <img src="projects/gastles/4.png">
+            </div>
+        </div>
+        <div class="portfolio_full_description content" style="margin-bottom: 50%;">
+            <br>
+            De twee scratch games die ik heb gemaakt zijn hier te vinden: <a target="_blank" href="https://scratch.mit.edu/users/TimBunk/"> mijn Scratch profiel </a>.
+            <br><br>
+            De kinderen konden kiezen of om een eigen game te maken in scratch of om missie 2, 5 of 6 te maken van <a target="_blank" href="https://www.skillsdojo.nl/programmeren-met-scratch/"> skillsdojo </a>.
+            <br><br>
+            Zie hier ook een <a target="_blank" href="https://www.facebook.com/IMCBasisWinschoten/posts/780719199455114?__tn__=-R"> facebook post </a> van OBS de Waterlelie over de gastles.
+            <br><br>
+            <div id="gallery">
+                <!-- Content will be added through the showcase.js script -->
+            </div>
+            <div id="showcase">
+                <div id="showcase_container">
+                    <img src="">
+                </div>
+            </div>
+        </div>
+
+
+    </div></div>
+    
+</body>
+<footer>
+    <style>
+        #nav_portfolio {border-bottom: 2px solid  rgb(0, 168, 143);}
+    </style>
+    <script src="js/showcase.js"></script>
+    <script> SetImgCountAndLocation(9, "projects/gastles/") </script>
+</footer>
+</html>
